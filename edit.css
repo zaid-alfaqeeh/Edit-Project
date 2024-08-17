@@ -104,22 +104,15 @@ text-decoration: none;
 }
 @media (max-width:409px)
 {
+    .container{
+        width: 95%;
+    }
  .img-box img ,canvas
 {
-    width: 70vw;
-    height: 60vh;
+    width: 90vw;
+    height: auto;
 }
-}
-@media (max-width:587px) and (min-width:410px) {
-    .img-box img ,canvas
-{
-    width: 65vw;
-    height: 50vh;
-} 
-}
-@media (max-width:779px)
-{
-    .control
+.control
 {
     display: none;
 } 
@@ -128,4 +121,18 @@ text-decoration: none;
     height: 100vh;
 }
 }
-
+@media (max-width:750px) and (min-width:410px) {
+    .img-box img ,canvas
+{
+    width: 65vw;
+    height: 50vh;
+}
+.control
+{
+    display: none;
+} 
+.container
+{
+    height: 100vh;
+} 
+}
