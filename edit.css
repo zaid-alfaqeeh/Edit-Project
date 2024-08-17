@@ -106,8 +106,8 @@ text-decoration: none;
 {
  .img-box img ,canvas
 {
-    width: 50vw;
-    height: 25vh;
+    width: 70vw;
+    height: 40vh;
 }
 }
 @media (max-width:587px) and (min-width:410px) {
