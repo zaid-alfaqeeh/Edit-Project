@@ -12,7 +12,8 @@ let upload=document.getElementById('f');
 let imgBox=document.querySelector(".img-box");
 let canvas=document.getElementById("canvas");
 let context=canvas.getContext('2d');
-
+let container=document.getElementsByClassName("container")[0];
+let control=document.getElementsByClassName("control")[0];
 function Reset()
 {
     context.filter='none';
@@ -39,6 +40,8 @@ onload=()=>
 upload.onchange=()=>
 {
     Reset();
+    control.style.display="block";
+    container.style.height="auto";
     download.style.display="block";
     reset.style.display="block";
     imgBox.style.display="block";

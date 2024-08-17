@@ -62,6 +62,7 @@ text-decoration: none;
 {
     flex-basis:20%;
     flex-grow: 1;
+    margin-left:15px ;
 }
 .control ul,.control ul li{
     display: flex;
@@ -75,6 +76,14 @@ text-decoration: none;
     font-weight: 300;
     font-size: 20px;
     list-style: none;
+}
+.control ul li input 
+{
+    -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+    border-radius: 10px;
+    background-color: #585757;
+    color: white;
+    box-shadow: 0 0 5px white;
 }
 .control ul li:last-child
 {
@@ -93,12 +102,30 @@ text-decoration: none;
     flex-basis: 70%;
 }
 }
-@media (max-width:786px)
+@media (max-width:409px)
 {
  .img-box img ,canvas
 {
-    width: 60vw;
+    width: 50vw;
+    height: 25vh;
+}
+}
+@media (max-width:587px) and (min-width:410px) {
+    .img-box img ,canvas
+{
+    width: 65vw;
     height: 50vh;
 } 
+}
+@media (max-width:779px)
+{
+    .control
+{
+    display: none;
+} 
+.container
+{
+    height: 100vh;
+}
 }
 
