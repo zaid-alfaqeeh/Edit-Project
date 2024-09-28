@@ -1,138 +1,125 @@
-body
-{
-    margin: 0;
-    padding: 0;
-    background-color: #444;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #444;
 }
-.container
-{
-    width: 80%;
-    background-color: #222;
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 20px;    
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 0 0 8px  white;
+.container {
+  width: 80%;
+  background-color: #222;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 8px white;
 }
-.picture
-{
-    flex-grow: 1;
+.picture {
+  flex-grow: 1;
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.img-box img,
+canvas {
+  width: auto;
+  height: 50vh;
+  border-radius: 8px;
+}
+.uploud {
+  padding: 20px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+.uploud label,
+.control ul li button,
+.control ul li a {
+  border: 2px solid #444;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+.uploud label:hover,
+.control ul li button:hover,
+.control ul li a:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+.uploud input {
+  display: none;
+}
+.control {
+  flex-basis: 20%;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+.control ul,
+.control ul li {
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  gap: 15px;
+}
+.control ul li {
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  list-style: none;
+}
+.control ul li input {
+  -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+  border-radius: 10px;
+  background-color: #585757;
+  color: white;
+  box-shadow: 0 0 5px white;
+}
+.control ul li:last-child {
+  flex-direction: row;
+}
+@media (max-width: 1199px) {
+  .picture {
     flex-basis: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-margin-top: 20px;
-}
-.img-box img,canvas
-{
-    width: auto;
+  }
+  .control {
+    flex-basis: 60%;
     height: 50vh;
+    overflow-y: scroll;
 }
-.uploud 
-{
-padding: 20px;
-color: white; 
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 600;
+  .img-box img,
+  canvas {
+    width: 60vw;
+  }
+  ul 
+  {
+    margin-bottom: 200px;
+  }
+  .control::-webkit-scrollbar
+  {
+    width: 0;
+  }
 }
-.uploud label,.control ul li button,.control ul li a
-{
-    border: 2px solid #444;
-    border-radius: 15px;
-    padding: 10px;
-    width: 100px;
-    display: inline-block;
-    text-align: center;
-    background-color: transparent;
-    color: white;
-text-decoration: none;
-}
-.uploud label:hover,.control ul li button:hover,.control ul li a:hover
-{
-    border: 2px solid white;
-    cursor: pointer;
-}
-.uploud input 
-{
-    display: none;
-}
-.control
-{
-    flex-basis:20%;
-    flex-grow: 1;
-    margin-left:15px ;
-}
-.control ul,.control ul li{
-    display: flex;
-    flex-direction: column;
-    direction: rtl;
-    gap: 15px;
-}
-.control ul li 
-{
-    color: white;
-    font-weight: 300;
-    font-size: 20px;
-    list-style: none;
-}
-.control ul li input 
-{
-    -webkit-appearance: none; /* Removes default styling in WebKit browsers */
-    border-radius: 10px;
-    background-color: #585757;
-    color: white;
-    box-shadow: 0 0 5px white;
-}
-.control ul li:last-child
-{
-   flex-direction: row; 
-}
-@media (max-width:469px)
-{
-    .control{
-        width: 100px;
-    }
-}
-@media (max-width:1162px)
-{
-.picture
-{
-    flex-basis: 70%;
-}
-}
-@media (max-width:409px)
-{
-    .container{
-        width: 95%;
-    }
- .img-box img ,canvas
-{
+/* @media (max-width: 409px) {
+  .container {
+    width: 95%;
+  }
+  .img-box img,
+  canvas {
     width: 90vw;
     height: auto;
-}
-.control
-{
+  }
+  .control {
     display: none;
-} 
-.container
-{
+  }
+  .container {
     height: 100vh;
-}
-}
-@media (max-width:750px) and (min-width:410px) {
-    .img-box img ,canvas
-{
-    width: 65vw;
-    height: 50vh;
-}
-.control
-{
-    display: none;
-} 
-.container
-{
-    height: 100vh;
-} 
-}
+  }
+} */
