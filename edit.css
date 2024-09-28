@@ -86,7 +86,11 @@ canvas {
   flex-direction: row;
 }
 @media (max-width: 1199px) {
-  .picture {
+  .container
+  {
+    height: 100vh;
+  }
+    .picture {
     flex-basis: 70%;
   }
   .control {
